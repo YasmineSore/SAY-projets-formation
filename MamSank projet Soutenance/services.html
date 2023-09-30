@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css" media="screen" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style-portfolio.css">
+        <link rel="stylesheet" href="css/picto-foundry-food.css" />
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link rel="icon" href="favicon-1.ico" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="row">
+            <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Mam-Sank</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav main-nav  clear navbar-right ">
+                        <li><a class="color_animation" href="index.html">ACCEUIL</a></li>
+                        <li><a class="color_animation" href="propos.html">A PROPOS </a></li>
+                        <li><a class="dropdown-menu" href="">SERVICES </a>
+                          <li><a href="">1</a></li>
+                          <li><a href="">2</a></li>
+                        </li>
+                        <li><a class="color_animation" href="reservation.html">RESERVATION</a></li>
+                        <li><a class="color_animation" href="Menu.html">MENU</a></li>
+                        <li><a class="color_animation" href="#contact">CONTACTS</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse --> 
+
+                <!-- /.navbar-collapse -->
+            </div>
+        </div><!-- /.container-fluid -->
+    </nav>
+    <br> <br><br> <br><br> <br><br> <br><br> <br><br> <br>
+
+<section>
+    <nav>
+
+        <ul>
+            <li><a href="" class="navbar-brand ">Mam-Sank</a></li>
+          <li class="menu-deroulant">
+            <a href="#">Services</a>
+            <ul class="sous-menu">
+              <li><a href="#">Graphisme</a></li>
+              <li><a href="#">Web & App</a></li>
+              <li><a href="#">Marketing</a></li>
+            </ul>
+          </li>
+          <li class="menu-deroulant">
+            <a href="#">Réalisations</a>
+            <ul class="sous-menu">
+              <li><a href="#">SpaceX</a></li>
+              <li><a href="#">Codeur.com</a></li>
+            </ul>
+          </li>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Contactez-nous</a></li>
+        </ul>
+      </nav>
+</section>
+
+
+<style>
+    :root{
+  --hauteur-menu: 85px;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Montserrat, sans-serif bold;
+}
+nav {
+  width: 100%;
+  font-size: 16px;
+  position: sticky;
+}
+
+nav > ul {
+  display: flex;
+  text-align: center;
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3);
+  height: var(--hauteur-menu);
+}
+ 
+nav ul {
+  list-style-type: none;
+}
+
+nav > ul > li {
+  background-color: #080808;
+  position: relative;
+  height: 100%;
+  flex: 1;
+}
+nav > ul > li > a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-deroulant > a:after{
+  content: '❯';
+  font-size: 15px;
+  margin-left: 7px;
+  display: inline-block;
+}
+.sous-menu {
+  margin-top: var(--hauteur-menu);
+  width: 100%;
+  text-align: left;
+  background-color: white;
+  border-radius: 2px;
+  overflow: hidden;
+  max-height: 0;
+}
+
+.sous-menu > li > a {
+  height: 50px;
+  padding-left: 20px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  color: #080808;
+}
+nav > ul > li:hover > a{
+  color: #96E16B;
+}
+.sous-menu > li:hover {
+  background-color: rgba(33, 105, 236, 0.3);
+}
+
+.sous-menu > li:hover > a {
+  color: white;
+}
+
+@keyframes rotationFleche {
+  0% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(90deg);
+  }
+}
+.menu-deroulant:hover > a:after{
+  animation: rotationFleche 0.2s linear forwards;
+}
+@keyframes apparitionSousMenu {
+  0% {
+    box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
+    border-top: 3px solid #96E16B;
+  }
+  30% {
+    box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+  }
+  100% {
+    max-height: 50em;
+    border-top: 3px solid #96E16B;
+    box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+  }
+}
+.menu-deroulant:hover > .sous-menu {
+  animation: apparitionSousMenu 1s forwards;
+}
+</style>
+
+      <!-- ============ Social Section  ============= -->
+      
+      <section class="social_connect">
+        <div class="text-content container"> 
+            <div class="col-md-6">
+                <span class="social_heading">FOLLOW</span>
+                <ul class="social_icons">
+                    <li><a class="icon-twitter color_animation" href="#" target="_blank"></a></li>
+                    <li><a class="icon-github color_animation" href="#" target="_blank"></a></li>
+                    <li><a class="icon-linkedin color_animation" href="#" target="_blank"></a></li>
+                    <li><a class="icon-mail color_animation" href="#"></a></li>
+                    <li><a class="icon color_animation" href="#"></a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <span class="social_heading">CONTACT</span>
+                <span class="social_info"><a class="color_animation" href="tel:+226 67 33 78 32">(+226) 67-33-78-32</a></span>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

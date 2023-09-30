@@ -1,0 +1,103 @@
+.page {
+	width: 780px;
+	margin: auto;
+	font-family: 'nunito', calibri, tohoma, sans-sérif;
+	font-size: 16px;
+	border: 5px solid#081016;
+	border-radius: 10px;
+	box-shadow: 2px 3px 4px black
+}
+
+/* Top section */
+.section_top {
+	height: 190px;
+
+	/* Couleur d'arrire-plan d'entete */
+	background-color: #e7b306;
+}
+
+.info {
+	float: left;
+	display: block;
+	padding-top: 1px;
+	font-size: 18px;
+}
+
+.info ul {
+	list-style-type: none;
+	padding-left: 20px;
+}
+
+.photo_profil {
+	float: right;
+	margin: 20px;
+	margin-left: 200px;
+
+}
+
+/* End Top section */
+
+/* main section */
+.main_section {
+	/* Couleur d'arriere-plan*/
+	background-color: #85d675c4;
+	margin-top: -1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+}
+
+.section_formation {
+	margin-bottom: 50px;
+	text-align: justify;
+	padding: 0 20px 0 20px;
+
+}
+
+.section_formation h2 {
+	text-align: center;
+	font-size: 28px;
+	color: #000;
+	border-bottom: 3px solid#3388DD
+}
+
+.parcours_formation li {
+	list-style-type: none;
+}
+
+.section_gauche {
+	float: left;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.section_droite {
+	margin-left: 300px;
+	margin-top: 20px;
+}
+
+
+.durée {
+	font-weight: normal;
+	font-style: italic;
+	font-size: 16px;
+}
+
+.titre {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.bottom_section {
+	/* Couleur de bas du cv */
+	background-color: hsl(51, 100%, 52%);
+	padding-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: -20px;
+	padding-top: 1px;
+}
+
+.bottom_section h2 {
+	text-align: center;
+	border-bottom: 3px solid#3388DD
+}
